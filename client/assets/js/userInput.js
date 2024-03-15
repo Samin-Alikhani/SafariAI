@@ -11,5 +11,5 @@ function getStudentInfo() {
     let user = new Student(userFirstName, userLastLetter, userGradeLevel);
     console.log(user);
     sessionStorage.setItem("user", JSON.stringify(user));
-    location.replace("test.html");
+    location.replace("rules.html");
 }
