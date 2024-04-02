@@ -1,0 +1,219 @@
+.zcool-kuaile-regular {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-style:normal;
+}
+
+.gruppo-regular {
+  font-family: "Gruppo", sans-serif;
+  font-style: normal;
+}
+
+.appbox{
+  
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+  border-radius: 15px;
+  background-color: rgba(248, 249, 209, 1);
+  min-height: 80vh;
+}
+
+.appboxflex{
+  display: flex;
+  flex-direction: column;
+}
+
+#pheader {
+  font-family:ZCOOL kuaiLe;
+  color: rgba(97, 134, 4, 1);
+  font-size: 5vw;
+  text-shadow: 
+  -2px -2px 0 rgba(89, 34, 2, 1),  
+   2px -2px 0 rgba(89, 34, 2, 1),
+  -2px  2px 0 rgba(89, 34, 2, 1),
+   2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.headerflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+}
+
+.formbox{
+  background-color: rgba(202, 203, 164, 1);
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 16px;
+  margin: 16px;
+}
+
+.formboxflex{
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+.machinecamera{
+  text-align: center; 
+  background-color: rgba(177, 178, 135, 0.75);
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  font-family:ZCOOL kuaiLe;
+  font-size: 32px;
+  color: rgba(202, 203, 164, 0.75);
+  
+  min-height: 25vh;
+  width: calc(100% - 8px);
+  box-sizing: border-box;
+  margin-right:8px;
+}
+
+.machineoutput {
+  text-align: center; 
+  background-color: rgba(177, 178, 135, 0.75);
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  font-family:ZCOOL kuaiLe;
+  font-size: 32px;
+  color: rgba(202, 203, 164, 0.75);
+  
+  min-height: 25vh;
+  width: calc(100% - 8px);
+  box-sizing: border-box;
+  margin-right:8px;
+}
+
+.aiboxflex{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.questionbox{
+  background-color: rgba(177, 178, 135, 0.75);
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  
+  margin: 8px;
+  margin-top: 8px;
+
+  min-height: 40vh;
+
+  width: calc(100% - 8px); /* Adjusts for any margins if present */
+  box-sizing: border-box;
+
+  
+
+}
+
+.questionboxflex{
+  display: flex;
+  flex-direction: column; /* This is crucial for aligning children vertically */
+  align-items:center;
+}
+
+.questiontitle{
+  font-family:ZCOOL kuaiLe;
+  color: rgba(97, 134, 4, 1);
+  font-size: 3vw;
+}
+
+.questiontitleflex{
+  display: flex;
+  flex-direction: row; /* This is crucial for aligning children vertically */
+  align-items:center;
+  text-align: center;
+}
+
+.lastflex{
+  display: flex;
+  justify-content: space-between; /* Positions children at either end */
+  padding-bottom: 32px;
+  grid-gap: 100px;
+}
+
+.answers {
+  font-family: Gruppo;
+  font-size: 2vw;
+  flex: 1;
+}
+
+.answersflex{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items:left;
+}
+
+.answersflex form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+  grid-gap: 10px; /* Adjusts the space between grid items */
+}
+
+.checkbtns{
+  font-family:ZCOOL kuaiLe;
+  color:rgba(254, 255, 0, 1);
+  font-size: 3vw;
+  background-color: rgba(97, 134, 4, 1);
+  border-style: solid;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+  border-radius: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 32px;
+  min-height: 10vh;
+}
+
+.checkbtnsflex{
+  display: flex;
+  flex-direction: column;
+  align-items:right;
+  justify-content: right;
+  
+}
+
+.navbutton {
+  font-family:ZCOOL kuaiLe;
+  color:rgba(254, 255, 0, 1);
+  font-size: 3vw;
+  background-color: rgba(97, 134, 4, 1);
+  border-style: solid;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+  border-radius: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 32px;
+}
+
+#clear{
+  background-color: rgba(121, 133, 91, 1);
+}
+
+.navboxflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
