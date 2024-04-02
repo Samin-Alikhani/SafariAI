@@ -1,0 +1,280 @@
+.zcool-kuaile-regular {
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    font-style:normal;
+  }
+
+  .gruppo-regular {
+    font-family: "Gruppo", sans-serif;
+    font-style: normal;
+}
+
+.appbox{
+
+  text-align: center; 
+
+  /* Border Specifications */
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+  border-radius: 15px;
+
+  background-color: rgba(248, 249, 209, 1);
+  background-clip: padding-box;
+
+}
+
+.appboxflex{
+  display: flex;
+  flex-direction: column;
+}
+
+.tipbox {
+  background-color: rgba(76, 102, 12, 1);
+  background-clip: padding-box;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 16px;
+  margin: 16px;
+}
+
+.tipboxflex {
+  display: flex;
+  flex-direction: row;
+}
+
+#tipheader{
+  font-family:ZCOOL kuaiLe;
+  color: rgba(254, 255, 0, 1);
+  font-size: 48px;
+  margin-left: 16px;
+  margin-right: 32px;
+  text-shadow: 
+  -2px -2px 0 rgba(89, 34, 2, 1),  
+   2px -2px 0 rgba(89, 34, 2, 1),
+  -2px  2px 0 rgba(89, 34, 2, 1),
+   2px  2px 0 rgba(89, 34, 2, 1);
+  
+}
+
+#tippar{
+  color: rgba(255, 255, 255, 1);
+  font-family: Gruppo;
+  font-size: 32px;
+  text-align: left;
+}
+
+
+.aisectionflex {
+  display: flex;
+  flex-direction: row;
+}
+
+.aibox{
+  background-color: rgba(202, 203, 164, 1);
+  background-clip: padding-box;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 64px;
+  margin: 16px;
+}
+
+.aiboxflex {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Grow to fill available space */
+  width: 100%; /* Explicitly define width to ensure full-width */
+}
+
+.aiheaderflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  text-shadow: 
+  -2px -2px 0 rgba(89, 34, 2, 1),  
+   2px -2px 0 rgba(89, 34, 2, 1),
+  -2px  2px 0 rgba(89, 34, 2, 1),
+   2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.aititletxt{
+  font-family:ZCOOL kuaiLe;
+  color: rgba(254, 255, 0, 1);
+  font-size: 48px;
+  margin: 16px;
+}
+
+#savannahtoggle{
+  input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 100px;
+    height: 60px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background:rgba(254, 255, 0, 1);
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: rgba(97, 134, 4, 1);
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 130px;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  margin-right: 16px;
+}
+
+#foresttoggle{
+  input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 100px;
+    height: 60px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background:rgba(254, 255, 0, 1);
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: rgba(97, 134, 4, 1);
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 130px;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  margin-right: 16px;
+}
+
+.machinecamera{
+  background-color: rgba(177, 178, 135, 0.75);
+  background-clip: padding-box;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 32px;
+  margin: 16px;
+
+  font-family:ZCOOL kuaiLe;
+  font-size: 32px;
+  color: rgba(202, 203, 164, 0.75);
+  height: 250px;
+
+}
+
+.machineoutput {
+  background-color: rgba(177, 178, 135, 0.75);
+  background-clip: padding-box;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 32px;
+  margin: 16px;
+
+  font-family:ZCOOL kuaiLe;
+  font-size: 32px;
+  color: rgba(202, 203, 164, 0.75);
+  height: 250px;
+}
+
+.navbutton {
+  font-family:ZCOOL kuaiLe;
+  color:rgba(254, 255, 0, 1);
+  font-size: 3vw;
+  background-color: rgba(97, 134, 4, 1);
+  border-style: solid;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+  border-radius: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 32px;
+  text-shadow: 
+  -2px -2px 0 rgba(89, 34, 2, 1),  
+   2px -2px 0 rgba(89, 34, 2, 1),
+  -2px  2px 0 rgba(89, 34, 2, 1),
+   2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.navboxflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

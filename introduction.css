@@ -1,0 +1,106 @@
+.zcool-kuaile-regular {
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    font-style:normal;
+}
+
+.gruppo-regular {
+    font-family: "Gruppo", sans-serif;
+    font-style: normal;
+}
+  
+.appbox{
+
+    text-align: center; 
+
+    /* Border Specifications */
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(89, 34, 2, 1);
+    border-radius: 15px;
+
+    background-color: rgba(248, 249, 209, 1);
+    background-clip: padding-box;
+}
+
+.formbox{
+
+  text-align: left;
+
+  background-color: rgba(202, 203, 164, 1);
+  background-clip: padding-box;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 64px;
+  margin: 16px;
+}
+
+#pheader {
+  font-family:ZCOOL kuaiLe;
+  color: rgba(97, 134, 4, 1);
+  font-size: 5vw;
+  text-shadow: 
+  -2px -2px 0 rgba(89, 34, 2, 1),  
+   2px -2px 0 rgba(89, 34, 2, 1),
+  -2px  2px 0 rgba(89, 34, 2, 1),
+   2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.emph{
+  font-family:ZCOOL kuaiLe;
+}
+
+#savannahstyle{
+  font-size: 3vw;
+  color:rgba(75, 31, 6, 1);
+  
+}
+
+#foreststyle{
+  font-size: 3vw;
+  color:rgba(42, 55, 10, 1);
+}
+
+#tipstyle{
+  font-size: 3vw;
+  color:rgba(254, 255, 0, 1);
+  text-shadow: 
+    -2px -2px 0 rgba(89, 34, 2, 1),  
+     2px -2px 0 rgba(89, 34, 2, 1),
+    -2px  2px 0 rgba(89, 34, 2, 1),
+     2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.introp {
+  font-family: Gruppo;
+  font-size: 2.5vw;
+}
+
+.navbutton {
+  font-family:ZCOOL kuaiLe;
+  color:rgba(254, 255, 0, 1);
+  font-size: 3vw;
+  background-color: rgba(97, 134, 4, 1);
+  border-style: solid;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+  border-radius: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 32px;
+  text-shadow: 
+  -2px -2px 0 rgba(89, 34, 2, 1),  
+   2px -2px 0 rgba(89, 34, 2, 1),
+  -2px  2px 0 rgba(89, 34, 2, 1),
+   2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.navboxflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

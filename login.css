@@ -1,0 +1,207 @@
+.zcool-kuaile-regular {
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    font-style:normal;
+}
+
+.gruppo-regular {
+    font-family: "Gruppo", sans-serif;
+    font-style: normal;
+  }
+
+.appbox{
+
+    /* Border Specifications */
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(89, 34, 2, 1);
+    border-radius: 35px;
+
+    background-color: rgba(248, 249, 209, 1);
+    background-clip: padding-box;
+}
+
+.appboxflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#pheader {
+    font-family:ZCOOL kuaiLe;
+    color: rgba(97, 134, 4, 1);
+    font-size: 96px;
+    margin-left: 150px;
+    text-shadow: 
+    -2px -2px 0 rgba(89, 34, 2, 1),  
+     2px -2px 0 rgba(89, 34, 2, 1),
+    -2px  2px 0 rgba(89, 34, 2, 1),
+     2px  2px 0 rgba(89, 34, 2, 1);
+  }
+
+.helpbtn {
+    font-family:ZCOOL kuaiLe;
+    color:rgba(254, 255, 0, 1);
+    font-size:24px;
+    background-color: rgba(121, 133, 91, 1);
+    border-style: solid;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(89, 34, 2, 1);
+    border-radius: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 32px;
+}
+
+.helpbtnflex {
+    display: flex;
+    justify-content: flex-end; /* Right-aligns the button */
+    flex-grow: 0; /* Prevents the button container from growing */
+}
+
+.headerboxflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}
+
+.headerflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1; /* Allows the header to grow and effectively centers it */
+    text-align: center; /* Centers the text within the header itself */
+}
+
+.formbox{
+
+    background-color: rgba(202, 203, 164, 1);
+    background-clip: padding-box;
+
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: rgba(89, 34, 2, 1);
+
+    padding: 8px;
+    margin: 16px;
+}
+
+.formboxflex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.namebox {
+    font-family: Gruppo;
+    font-size: 48px;
+    background-color: rgba(248, 249, 209, 1);
+    background-clip: padding-box;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: rgba(89, 34, 2, 1);
+    
+    padding:64px;
+    margin: 4px;
+}
+
+.nameboxflex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%; 
+}
+
+.gradebox {
+
+    font-family: Gruppo;
+    font-size: 48px;
+    background-color: rgba(248, 249, 209, 1);
+    background-clip: padding-box;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: rgba(89, 34, 2, 1);
+    
+    padding: 64px;
+    margin: 4px;
+}
+
+.gradeboxflex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%; 
+}
+
+.pgbutton {
+    font-family:ZCOOL kuaiLe;
+    color:rgba(254, 255, 0, 1);
+    font-size:24px;
+    background-color: rgba(97, 134, 4, 1);
+    border-style: solid;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(89, 34, 2, 1);
+    border-radius: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 32px;
+    text-shadow: 
+    -2px -2px 0 rgba(89, 34, 2, 1),  
+     2px -2px 0 rgba(89, 34, 2, 1),
+    -2px  2px 0 rgba(89, 34, 2, 1),
+     2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+#clearbtn{
+    background-color: rgba(121, 133, 91, 1);
+}
+
+.pgbtnflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.navbutton {
+
+    font-family:ZCOOL kuaiLe;
+    color:rgba(254, 255, 0, 1);
+    font-size:54px;
+    background-color: rgba(97, 134, 4, 1);
+    border-style: solid;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(89, 34, 2, 1);
+    border-radius: 15px;
+    padding: 16px;
+    margin: 32px;
+    text-shadow: 
+    -2px -2px 0 rgba(89, 34, 2, 1),  
+     2px -2px 0 rgba(89, 34, 2, 1),
+    -2px  2px 0 rgba(89, 34, 2, 1),
+     2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.navboxflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}

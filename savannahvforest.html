@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--Define keywords for search engines-->
+        <meta http-equiv="refresh" content="30">
+        <!--Setting the viewport to make your website look good on all devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        <base href="https://www.w3schools.com/" target="_blank">
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="myscript.js">
+        -->
+        <link rel="stylesheet" href="styles/savannahvforest.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+        <title>SafariAI</title>
+    </head>
+    <body>
+        
+        <div class="appbox appboxflex">
+
+            <!--Reviewed-->
+            <div class="tipbox tipboxflex">
+                <h1 id="tipheader">Tip:</h1>
+                <p id="tippar">Toggle the button for each AI to show flashcards to it. <br>
+                    Show all of the cards in your deck to each AI model to determine which ones it can recognize.<br>
+                    When you are done you can go to the next page. </p>
+            </div>
+
+            <div class="aisectionflex">
+
+                <div class="aibox aiboxflex">
+
+                    <div class="aiheader aiheaderflex">
+                        <div class="aititle">
+                            <h1 class="aititletxt"> Savannah AI</h1>
+                        </div>
+                        <div id="savannahtoggle">
+                            <input class="togglebtn" type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                        </div>
+                    </div>
+                    
+                    <div class="machinecamera">
+                        <p>Camera</p>
+                    </div>
+                    
+                    <div class="machineoutput">
+                        <p>Output</p>
+                    </div>
+                    
+                </div>
+
+                <div class="aibox aiboxflex">
+
+                    <div class="aiheader aiheaderflex">
+                        <div class="aititle">
+                            <h1 class="aititletxt"> Forest AI</h1>
+                        </div>
+                        <div id="foresttoggle" >
+                            <input class="togglebtn" type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                        </div>
+                    </div>
+                    
+                    <div class="machinecamera">
+                        <p>Camera</p>
+                    </div>
+                    
+                    <div class="machineoutput">
+                        <p>Output</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navboxflex">
+
+                <div class="exitbtnflex">
+                    <button class="navbutton" onclick="document.location='landing.html'">Exit</button>
+                
+                </div>  
+    
+                <div class="navbtnflex">
+                <button class="navbutton" onclick="document.location='introduction.html'">Back</button>
+                <button class="navbutton" onclick="document.location='mysteryintro.html'">Next</button>
+                </div>
+
+            </div>
+    
+        </div>
+    
+    </body>
+</html>
+

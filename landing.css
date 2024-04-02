@@ -1,0 +1,80 @@
+.zcool-kuaile-regular {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-style:normal;
+}
+
+.appbox{
+
+    text-align: center;
+
+    background-color: rgba(248, 249, 209, 1);
+   
+
+    /* Border Specifications */
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(89, 34, 2, 1);
+    border-radius: 35px;
+
+}
+
+.appboxflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.appboxflex > * { /* Targets all direct children of .appboxflex */
+    margin-bottom: 24px; /* Adjust the value based on your preference */
+}
+
+.appboxflex > *:navbar {
+    margin-bottom: 0;
+}
+
+#pheader {
+    font-family:ZCOOL kuaiLe;
+    color: rgba(97, 134, 4, 1);
+    font-size: 128px;
+    text-shadow: 
+    -2px -2px 0 rgba(89, 34, 2, 1),  
+     2px -2px 0 rgba(89, 34, 2, 1),
+    -2px  2px 0 rgba(89, 34, 2, 1),
+     2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+.mascotflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.mascot {
+    width: 25%; /* Default size */
+    height: auto;
+    margin-bottom: 64px;
+  }
+  
+#startbtn{
+
+    font-family:ZCOOL kuaiLe;
+    color:rgba(254, 255, 0, 1);
+    font-size:72px;
+    background-color: rgba(97, 134, 4, 1);
+    border-style: solid;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(89, 34, 2, 1);
+    border-radius: 35px;
+    padding: 36px;
+    margin: 32px;
+    text-shadow: 
+    -2px -2px 0 rgba(89, 34, 2, 1),  
+     2px -2px 0 rgba(89, 34, 2, 1),
+    -2px  2px 0 rgba(89, 34, 2, 1),
+     2px  2px 0 rgba(89, 34, 2, 1);
+}
+
+
+
