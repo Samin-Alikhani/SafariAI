@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="mystyle.css">
         <script src="myscript.js">
         -->
-        <link rel="stylesheet" href="styles/login.css">
+        <link rel="stylesheet" href="assets/css/styles/login.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,8 @@
                     <form class="namebox">
                         <label for="firstName">First Name:</label>
                         <input type="text" id="firstName" name="fname" autocomplete="off" maxlength="20" required><br><br>
+                        <label for="firstName">Last Name:</label>
+                        <input type="text" id="lastName" name="lname" autocomplete="off" maxlength="20" required>
                     </form>
                 </div>
                 
@@ -61,19 +63,15 @@
                     </form>
                 </div>
 
-                <div class="pgbtnflex">
-                    <input class="pgbutton" id="clearbtn" type="reset" value="Clear">
-                    <input class="pgbutton" type="submit" value="Submit">
-                </div>
-
             </div>
 
             <div class="navbox navboxflex">
-                <button class="navbutton" onclick="document.location='introduction.html'">Play Now!</button>
+                <button class="navbutton" onclick="document.location='introduction.html',getStudentInfo()">Play Now!</button>
             </div>
         
         </div>
 
     </body>
+    <script src="assets/js/game/userInput.js"></script>
 </html>
 
