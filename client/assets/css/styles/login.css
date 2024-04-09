@@ -1,3 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    padding-top: 1vh; /* Adjust this value as needed to lower the container */
+    background-color: rgba(248, 249, 209, 1); /* Set background color */
+    font-size: 16px; /* Increase the base font size */
+}
+
+.container {
+    margin-bottom: auto; /* Push the container down to the center of the window */
+    border-style: solid;
+    background-color: rgba(248, 249, 209, 1); /* Set container background color */
+    padding: 30px; /* Increase padding for better visibility */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Add shadow for depth */
+    border-color: rgb(89, 34, 2);
+    border-width: 4px;
+}
+
+.btn-primary{
+  
+    background-color: rgba(97, 134, 4, 1);
+    color: rgba(254, 255, 0, 1);
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(89, 34, 2, 1);
+  
+    padding: 0.50rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 1.3rem;;
+  
+  }
+  
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: rgba(254, 255, 0, 1);
+    background-color: rgba(120, 160, 20, 1);
+    border-color: #43409d; /*set the color you want here*/
+}
+
+.form-check-input:checked {
+	background-color: #43409d;
+	border-color: #0d3efd;
+}
+
+.title {
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    font-size: 3vw;
+    -webkit-text-stroke: 1px rgba(89, 34, 2, 1);
+    color: rgba(97, 134, 4, 1);
+    text-align: center;
+
+}
+
+img {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
 .zcool-kuaile-regular {
     font-family: "ZCOOL KuaiLe", sans-serif;
     font-style:normal;
@@ -9,15 +72,14 @@
   }
 
 .appbox{
-
-    /* Border Specifications */
+    margin-bottom: auto; /* Push the container down to the center of the window */
     border-style: solid;
+    background-color: rgba(248, 249, 209, 1); /* Set container background color */
+    padding: 30px; /* Increase padding for better visibility */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    box-shadow: -8px 10px 10px 5px rgb(0, 0, 0.1); /* Add shadow for depth */
+    border-color: rgb(89, 34, 2);
     border-width: 4px;
-    border-color: rgba(89, 34, 2, 1);
-    border-radius: 35px;
-
-    background-color: rgba(248, 249, 209, 1);
-    background-clip: padding-box;
 }
 
 .appboxflex{

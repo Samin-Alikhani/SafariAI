@@ -1,79 +1,163 @@
-.zcool-kuaile-regular {
-    font-family: "ZCOOL KuaiLe", sans-serif;
-    font-style:normal;
-  }
-
-  .gruppo-regular {
-    font-family: "Gruppo", sans-serif;
-    font-style: normal;
-}
-
-.appbox{
-
-  text-align: center; 
-
-  /* Border Specifications */
-  border-style: solid;
-  border-width: 4px;
-  border-color: rgba(89, 34, 2, 1);
-  border-radius: 15px;
-
-  background-color: rgba(248, 249, 209, 1);
-  background-clip: padding-box;
-
-}
-
-.appboxflex{
+html, body {
+  height: 100%;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding-top: .5vh; /* Adjust this value as needed to lower the container */
+  background-color: rgba(248, 249, 209, 1); /* Set background color */
+  font-size: 16px; /* Increase the base font size */
 }
 
-.tipbox {
-  background-color: rgba(76, 102, 12, 1);
-  background-clip: padding-box;
-
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 35px;
-  border-color: rgba(89, 34, 2, 1);
-
-  padding: 16px;
-  margin: 16px;
-}
-
-.tipboxflex {
-  display: flex;
-  flex-direction: row;
-}
-
-#tipheader{
+.header-text{
   font-family:ZCOOL kuaiLe;
-  color: rgba(254, 255, 0, 1);
-  font-size: 48px;
-  margin-left: 16px;
-  margin-right: 32px;
-  text-shadow: 
-  -2px -2px 0 rgba(89, 34, 2, 1),  
-   2px -2px 0 rgba(89, 34, 2, 1),
-  -2px  2px 0 rgba(89, 34, 2, 1),
-   2px  2px 0 rgba(89, 34, 2, 1);
-  
+  color: rgba(97, 134, 4, 1);
+  font-size: 3.25vw;
+  -webkit-text-stroke: 1px rgba(89, 34, 2, 1);
+  text-align: center;
+}
+
+.container {
+    margin-bottom: auto; /* Push the container down to the center of the window */
+    border-style: solid;
+    background-color: rgba(202, 203, 164, 0.5); /* Set container background color */
+    padding: 30px; /* Increase padding for better visibility */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+
+    border-color: rgb(89, 34, 2);
+    border-width: 4px;
+    box-shadow: -4px 6px 10px 5px rgb(0, 0, 0.1);
+}
+
+.tip-box
+{
+  margin-bottom: auto; /* Push the container down to the center of the window */
+  border-style: solid;
+  width: 100%;
+  background-color: rgba(97, 134, 4, 1); /* Set container background color */
+  padding: 10px; /* Increase padding for better visibility */
+  border-radius: 15px; /* Add border-radius for rounded corners */
+
+  border-color: rgb(89, 34, 2);
+  border-width: 4px;
+  box-shadow: -4px 6px 10px 5px rgb(0, 0, 0.1);
+}
+
+.tip-box .row > div {
+  margin-right: 20px; /* Adjust the value as needed */
 }
 
 #tippar{
   color: rgba(255, 255, 255, 1);
   font-family: Gruppo;
-  font-size: 32px;
+  font-size: 1.20vw;
   text-align: left;
 }
 
-
-.aisectionflex {
-  display: flex;
-  flex-direction: row;
+.button-box{
+  margin-top: 2vw;
+  text-align: right;
 }
 
-.aibox{
+video{
+  width: 100%; /* Makes the video element fill the width of its container */
+  height: 100%; /* Makes the video element fill the height of its container */
+  object-fit: cover;
+}
+
+.video-container{
+  width: 100%; /* Makes the video element fill the width of its container */
+  height: 350px;
+}
+
+.btn-exit{
+  
+  background-color: rgba(97, 134, 4, 1);
+  color: rgba(254, 255, 0, 1);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 0.25rem 3rem;
+  font-size: 2.25rem;
+  border-radius: 1.3rem;
+
+}
+
+.btn-exit:hover, .btn-exit:focus, .btn-exit:active, .btn-exit.active, .open>.dropdown-toggle.btn-exit {
+  color: rgba(254, 255, 0, 1);
+  background-color: rgba(120, 160, 20, 1);
+  border-color: #43409d; /*set the color you want here*/
+}
+
+.btn-ai{
+  background-color: rgb(134, 47, 4);
+  color: rgba(254, 255, 0, 1);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(89, 34, 2, 1);
+  border-radius: 1.3rem;
+}
+
+.btn-ai:hover, .btn-ai:focus, .btn-ai:active, .btn-ai.active, .open>.dropdown-toggle.btn-ai{
+  box-shadow: none;
+  color: rgba(97, 134, 4, 1);
+}
+
+.btn-ai:not(:disabled):not(.disabled).active{
+  color: rgba(97, 134, 4, 1);
+  background-color: rgba(254, 255, 0, 1);
+  border-color: rgba(89, 34, 2, 1);
+} 
+
+.toggle-box{
+  text-align: right;
+}
+
+.card-header{
+  background-color: rgba(97, 134, 4, 1);
+  border-style: solid;
+  border-color: rgba(89, 34, 2, 1);
+  border-width: 2px;
+  color: rgba(254, 255, 0, 1);
+  font-family: Gruppo;
+  font-size: 1.25rem;
+  border-radius: 1.3rem;
+}
+
+.card-body{
+  background-color: rgba(177, 178, 135, 0.75);
+  border-style: solid;
+  border-color: rgba(89, 34, 2, 1);
+  border-width: 2px;
+   
+}
+
+.appbox{
+  margin-bottom: auto; /* Push the container down to the center of the window */
+  border-style: solid;
+  background-color: rgba(248, 249, 209, 1); /* Set container background color */
+  padding: 30px; /* Increase padding for better visibility */
+  border-radius: 15px; /* Add border-radius for rounded corners */
+  box-shadow: -8px 10px 10px 5px rgb(0, 0, 0.1); /* Add shadow for depth */
+  border-color: rgb(89, 34, 2);
+  border-width: 4px;
+}
+
+.zcool-kuaile-regular {
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    font-style:normal;
+}
+
+.gruppo-regular {
+    font-family: "Gruppo", sans-serif;
+    font-style: normal;
+}
+
+.formbox{
+
+  text-align: left;
+
   background-color: rgba(202, 203, 164, 1);
   background-clip: padding-box;
 
@@ -86,18 +170,10 @@
   margin: 16px;
 }
 
-.aiboxflex {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* Grow to fill available space */
-  width: 100%; /* Explicitly define width to ensure full-width */
-}
-
-.aiheaderflex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 32px;
+#pheader {
+  font-family:ZCOOL kuaiLe;
+  color: rgba(97, 134, 4, 1);
+  font-size: 5vw;
   text-shadow: 
   -2px -2px 0 rgba(89, 34, 2, 1),  
    2px -2px 0 rgba(89, 34, 2, 1),
@@ -105,176 +181,28 @@
    2px  2px 0 rgba(89, 34, 2, 1);
 }
 
-.aititletxt{
+.emph{
   font-family:ZCOOL kuaiLe;
-  color: rgba(254, 255, 0, 1);
-  font-size: 48px;
-  margin: 16px;
 }
 
-#savannahtoggle{
-  input[type=checkbox]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  
-  label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 100px;
-    height: 60px;
-    background: grey;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-  }
-  
-  label:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 50px;
-    height: 50px;
-    background:rgba(254, 255, 0, 1);
-    border-radius: 90px;
-    transition: 0.3s;
-  }
-  
-  input:checked + label {
-    background: rgba(97, 134, 4, 1);
-  }
-  
-  input:checked + label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-  }
-  
-  label:active:after {
-    width: 130px;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  margin-right: 16px;
-}
-
-#foresttoggle{
-  input[type=checkbox]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  
-  label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 100px;
-    height: 60px;
-    background: grey;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-  }
-  
-  label:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 50px;
-    height: 50px;
-    background:rgba(254, 255, 0, 1);
-    border-radius: 90px;
-    transition: 0.3s;
-  }
-  
-  input:checked + label {
-    background: rgba(97, 134, 4, 1);
-  }
-  
-  input:checked + label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-  }
-  
-  label:active:after {
-    width: 130px;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  margin-right: 16px;
-}
-
-.machinecamera{
-  background-color: rgba(177, 178, 135, 0.75);
-  background-clip: padding-box;
-
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 35px;
-  border-color: rgba(89, 34, 2, 1);
-
-  padding: 32px;
-  margin: 16px;
-
-  font-family:ZCOOL kuaiLe;
-  font-size: 32px;
-  color: rgba(202, 203, 164, 0.75);
-  height: 250px;
-
-}
-
-.machineoutput {
-  background-color: rgba(177, 178, 135, 0.75);
-  background-clip: padding-box;
-
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 35px;
-  border-color: rgba(89, 34, 2, 1);
-
-  padding: 32px;
-  margin: 16px;
-
-  font-family:ZCOOL kuaiLe;
-  font-size: 32px;
-  color: rgba(202, 203, 164, 0.75);
-  height: 250px;
-}
-
-.navbutton {
-  font-family:ZCOOL kuaiLe;
-  color:rgba(254, 255, 0, 1);
+#tipstyle{
   font-size: 3vw;
-  background-color: rgba(97, 134, 4, 1);
-  border-style: solid;
-  border-style: solid;
-  border-width: 4px;
-  border-color: rgba(89, 34, 2, 1);
-  border-radius: 15px;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin: 32px;
-  text-shadow: 
-  -2px -2px 0 rgba(89, 34, 2, 1),  
-   2px -2px 0 rgba(89, 34, 2, 1),
-  -2px  2px 0 rgba(89, 34, 2, 1),
-   2px  2px 0 rgba(89, 34, 2, 1);
+  color:rgba(254, 255, 0, 1);
+  -webkit-text-stroke: 1px rgba(89, 34, 2, 1);
 }
 
-.navboxflex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.prediction{
+  font-size: 60px;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 0rem;
+}
+
+.introp {
+  font-family: Gruppo;
+  font-size: 1.25rem;
+}
+
+ul {
+  list-style-type: none;
 }

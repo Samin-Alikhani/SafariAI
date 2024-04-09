@@ -1,3 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding-top: .5vh; /* Adjust this value as needed to lower the container */
+  background-color: rgba(248, 249, 209, 1); /* Set background color */
+  font-size: 16px; /* Increase the base font size */
+}
+
+.header-text{
+  font-family:ZCOOL kuaiLe;
+  color: rgba(97, 134, 4, 1);
+  font-size: 3.25vw;
+  -webkit-text-stroke: 1px rgba(89, 34, 2, 1);
+  text-align: center;
+  
+}
+
+h1{
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.container {
+    margin-bottom: auto; /* Push the container down to the center of the window */
+    border-style: solid;
+    background-color: rgba(202, 203, 164, 0.5); /* Set container background color */
+    padding: 30px; /* Increase padding for better visibility */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+
+    border-color: rgb(89, 34, 2);
+    border-width: 4px;
+
+}
+
+.button-box{
+  margin-top: 2vw;
+  text-align: center;
+}
+
+.btn-primary{
+  
+  background-color: rgba(97, 134, 4, 1);
+  color: rgba(254, 255, 0, 1);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(89, 34, 2, 1);
+
+  padding: 0.25rem 3rem;
+  font-size: 2.75rem;
+  border-radius: 1.3rem;;
+
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: rgba(254, 255, 0, 1);
+  background-color: rgba(120, 160, 20, 1);
+  border-color: #43409d; /*set the color you want here*/
+}
+
+.appbox{
+  margin-bottom: auto; /* Push the container down to the center of the window */
+  border-style: solid;
+  background-color: rgba(248, 249, 209, 1); /* Set container background color */
+  padding: 30px; /* Increase padding for better visibility */
+  border-radius: 15px; /* Add border-radius for rounded corners */
+  box-shadow: -8px 10px 10px 5px rgb(0, 0, 0.1); /* Add shadow for depth */
+  border-color: rgb(89, 34, 2);
+  border-width: 4px;
+}
+
 .zcool-kuaile-regular {
     font-family: "ZCOOL KuaiLe", sans-serif;
     font-style:normal;
@@ -6,20 +83,6 @@
 .gruppo-regular {
     font-family: "Gruppo", sans-serif;
     font-style: normal;
-}
-  
-.appbox{
-
-    text-align: center; 
-
-    /* Border Specifications */
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgba(89, 34, 2, 1);
-    border-radius: 15px;
-
-    background-color: rgba(248, 249, 209, 1);
-    background-clip: padding-box;
 }
 
 .formbox{
@@ -54,53 +117,27 @@
 }
 
 #savannahstyle{
-  font-size: 3vw;
+  font-size: 1.45rem;
   color:rgba(75, 31, 6, 1);
   
 }
 
 #foreststyle{
-  font-size: 3vw;
+  font-size: 1.45rem;
   color:rgba(42, 55, 10, 1);
 }
 
 #tipstyle{
-  font-size: 3vw;
+  font-size: 1.25vw;
   color:rgba(254, 255, 0, 1);
-  text-shadow: 
-    -2px -2px 0 rgba(89, 34, 2, 1),  
-     2px -2px 0 rgba(89, 34, 2, 1),
-    -2px  2px 0 rgba(89, 34, 2, 1),
-     2px  2px 0 rgba(89, 34, 2, 1);
+  -webkit-text-stroke: 1px rgba(89, 34, 2, 1);
 }
 
 .introp {
   font-family: Gruppo;
-  font-size: 2.5vw;
+  font-size: 1.50rem;
 }
 
-.navbutton {
-  font-family:ZCOOL kuaiLe;
-  color:rgba(254, 255, 0, 1);
-  font-size: 3vw;
-  background-color: rgba(97, 134, 4, 1);
-  border-style: solid;
-  border-style: solid;
-  border-width: 4px;
-  border-color: rgba(89, 34, 2, 1);
-  border-radius: 15px;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin: 32px;
-  text-shadow: 
-  -2px -2px 0 rgba(89, 34, 2, 1),  
-   2px -2px 0 rgba(89, 34, 2, 1),
-  -2px  2px 0 rgba(89, 34, 2, 1),
-   2px  2px 0 rgba(89, 34, 2, 1);
-}
-
-.navboxflex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+ul {
+  list-style-type: none;
 }
