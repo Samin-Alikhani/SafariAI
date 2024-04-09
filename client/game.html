@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafariAI</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/styles/savannahvforest.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="appbox">
+        <!-- Tip Box -->
+        <div class="tip-box">
+            <div class="row">
+                <div class="col-md-1"><h1 class="emph" id="tipstyle">Tip: </h1></div>
+                <div class="col-md-10">
+                    <p id="tippar">Click the buttons to toggle the AI on and off! Show all of the flashcards to the AI to see what they can recognize.</p>
+                    <p id="tippar">When you're ready you can go to the next page!</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- AI Models-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header ">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h3>You</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body video-container">
+                            <video id="video"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h3>Forest</h3>
+                                </div>
+                                <div class="me-2">
+                                    <button type="button" class="btn btn-ai" data-bs-toggle="button" autocomplete="off" aria-pressed="false" id="fButton">Off</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body" id="webcam-container">
+                            <div id="label-container" class="label-container">
+                                <h5 id="forestPredict">I think this is a...</h2>
+                                <p class="prediction" id="fPrediction">❔</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h3>Savannah</h3>
+                                </div>
+                                <div class="me-2">
+                                    <button type="button" class="btn btn-ai" data-bs-toggle="button" autocomplete="off" aria-pressed="false" id="sButton">Off</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body" id="webcam-container">
+                            <div id="label-container" class="label-container">
+                                <h5>I think this is a...</h5>
+                                <p class="prediction" id="sPrediction">❔</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button Box-->
+        <div class="button-box">
+            <button type="button" class="btn-exit" onclick="window.location.href='mysteryRules.html'">Next</button>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+<script src="assets/js/game/track.js"></script>
+<script src="assets/js/game/game.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+</html>

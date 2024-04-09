@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafariAI</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/styles/login.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="appbox">
+
+        <!-- Zoo AI Title -->
+        <div class="text-center">
+            <h1 class="title">SafariAI</h1>
+        </div>
+        <br>
+
+        <!-- Zoo AI Image Logo -->
+        <div class="text-center">
+            <img src="assets/images/SafariAI.png" alt="Zoo AI Logo" class="img-fluid">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+        </div>
+        <br>
+
+        <!-- user input form -->
+        <div class="form-group">
+            <label for="lastLetter">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="gradeLevel">Grade Level</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gradeLevel" id="flexRadioDefault1" value="6th">
+            <label class="form-check-label" for="flexRadioDefault1">
+                6th
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gradeLevel" id="flexRadioDefault2" value="7th">
+            <label class="form-check-label" for="flexRadioDefault2">
+                7th
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gradeLevel" id="flexRadioDefault3" value="8th">
+            <label class="form-check-label" for="flexRadioDefault3">
+                8th
+            </label>
+        </div>
+        <br>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary btn-lg" onclick="gatherStudentInfo(), document.location='rules.html'">Play Now</button>
+        </div>
+
+    </div>
+</body>
+<script src="assets/js/game/track.js"></script>
+</html>
