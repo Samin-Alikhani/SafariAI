@@ -1,9 +1,9 @@
-//const ModelM = "https://teachablemachine.withgoogle.com/models/7fYc62ook/";
+const ModelM = "https://teachablemachine.withgoogle.com/models/VP6RNLRWH/";
 const video = document.getElementById('video');
 const score = document.getElementById('score');
-let mPredict = document.getElementById('fPrediction');
+let mPredict = document.getElementById('mPrediction');
 
-//ml5.imageClassifier(ModelM, video).then(classifier => mLoop(classifier));
+ml5.imageClassifier(ModelM, video).then(classifier => mLoop(classifier));
 
 // Create a webcam capture
 navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
@@ -14,14 +14,15 @@ navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
   
 const mLoop = classifier => {
   classifier.classify().then(results => {
-
-    //Tiger, Horse, and Rhino
-    if(results[0].label === "Tiger") {
-        mPredict.innerHTML = "🐅";
-    }else if(results[0].label === "Horse") {
-        mPredict.innerHTML = "🐎";
-    }else if(results[0].label === "Rhino") {
-        mPredict.innerHTML = "🦏";
+ 
+    if(results[0].label === "Dog") {
+        mPredict.innerHTML = "🐕";
+    }else if(results[0].label === "Hen") {
+        mPredict.innerHTML = "🐔";
+    }else if(results[0].label === "Cow") {
+        mPredict.innerHTML = "🐄";
+    }else{
+      mPredict.innerHTML = "❔";
     }
 
     mLoop(classifier); // Call again to create a loop
