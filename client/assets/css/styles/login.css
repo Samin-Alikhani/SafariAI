@@ -6,7 +6,16 @@ html, body {
     align-items: flex-start; /* Align items to the top */
     padding-top: 1vh; /* Adjust this value as needed to lower the container */
     background-color: rgba(248, 249, 209, 1); /* Set background color */
-    font-size: 16px; /* Increase the base font size */
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+}
+
+element {
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-bottom: -5px;
+	margin-top: -10px;
 }
 
 .container {
@@ -55,8 +64,7 @@ html, body {
 }
 
 img {
-    max-width: 400px;
-    max-height: 400px;
+    max-height: 150px;
     width: auto;
     height: auto;
 }
@@ -75,7 +83,7 @@ img {
     margin-bottom: auto; /* Push the container down to the center of the window */
     border-style: solid;
     background-color: rgba(248, 249, 209, 1); /* Set container background color */
-    padding: 30px; /* Increase padding for better visibility */
+    padding: 20px; /* Increase padding for better visibility */
     border-radius: 15px; /* Add border-radius for rounded corners */
     box-shadow: -8px 10px 10px 5px rgb(0, 0, 0.1); /* Add shadow for depth */
     border-color: rgb(89, 34, 2);

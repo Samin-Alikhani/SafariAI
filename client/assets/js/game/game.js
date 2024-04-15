@@ -8,6 +8,16 @@ let sToggle = document.getElementById('sButton');
 let sPredict = document.getElementById('sPrediction');
 let fPredict = document.getElementById('fPrediction');
 
+
+// Create a webcam capture
+navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
+  video.srcObject = stream;
+  video.play();
+});
+
+ml5.imageClassifier(ModelF, video).then(classifier => fLoop(classifier));
+ml5.imageClassifier(ModelS, video).then(classifier => sLoop(classifier));
+
 fToggle.addEventListener('click', function() {
   // Check if the button is pressed
   if(fToggle.getAttribute('aria-pressed') === 'true') {
@@ -27,12 +37,6 @@ sToggle.addEventListener('click', function() {
       sToggle.innerHTML = 'Off';
   }
 });
-
-// Create a webcam capture
-navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
-    video.srcObject = stream;
-    video.play();
-  });
 
 const sLoop = classifier => {
   classifier.classify().then(results => {
@@ -75,7 +79,4 @@ const fLoop = classifier => {
     fLoop(classifier); // Call again to create a loop
   });
 };
-
-ml5.imageClassifier(ModelF, video).then(classifier => fLoop(classifier));
-ml5.imageClassifier(ModelS, video).then(classifier => sLoop(classifier));
 

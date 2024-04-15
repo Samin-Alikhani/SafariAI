@@ -71,25 +71,29 @@
                                 <label>Select the animals Mystery AI can Identify:</label>
                                 <br><br>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="option1" value="option1">
+                                  <input class="form-check-input" type="checkbox" id="option1" value="1">
                                   <label class="form-check-label" for="option1">Hen</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="option2" value="option2">
+                                  <input class="form-check-input" type="checkbox" id="option2" value="-1">
                                   <label class="form-check-label" for="option2">Cat</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="option3" value="option3">
+                                  <input class="form-check-input" type="checkbox" id="option3" value="1">
                                   <label class="form-check-label" for="option3">Cow</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="option4" value="option4">
+                                  <input class="form-check-input" type="checkbox" id="option4" value="-1">
                                   <label class="form-check-label" for="option4">Penguin</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="option5" value="option5">
+                                  <input class="form-check-input" type="checkbox" id="option5" value="1">
                                   <label class="form-check-label" for="option5">Dog</label>
                                 </div>
+                            </div>
+                            <div>
+                                <br>
+                                <p class="quiz">Score: <span id="score"></span></p>
                             </div>
                         </div>
                     </div>
@@ -98,12 +102,12 @@
         </div>
         <!-- Button Box-->
         <div class="button-box">
-            <button type="button" class="btn-exit" onclick="window.location.href='index.html'">End</button>
+            <button type="button" class="btn-exit" onclick="window.location.href='index.html',endQuiz(), endTimer(), exportData()">End</button>
         </div>
     </div>
 </body>
 <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 <script src="assets/js/game/track.js"></script>
-<script src="assets/js/game/mystery.js"></script>
+<script src="assets/js/game/quiz.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>
 </html>

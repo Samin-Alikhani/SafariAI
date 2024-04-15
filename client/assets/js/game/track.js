@@ -1,7 +1,9 @@
 //tracker to see how long the player has been playing
 
-var track = {
+var trackTime = {
     totalTime: 0,
+    gameTotalTime: 0,
+    quizTotalTime: 0,
     start: function() {
         // Store the start time in session storage
         sessionStorage.setItem('startTime', new Date().getTime());
@@ -22,20 +24,69 @@ var track = {
         } else {
             console.log("No activity started.");
         }
+    },
+    gameStart: function() {
+        // Store the start time in session storage
+        sessionStorage.setItem('gameStartTime', new Date().getTime());
+        console.log("Game started at: " + new Date());
+    },
+    gameEnd: function() {
+        // Retrieve the start time from session storage
+        var gameStartTime = parseInt(sessionStorage.getItem('gameStartTime'));
+        if (!isNaN(gameStartTime)) {
+            var gameEndTime = new Date().getTime();
+            this.gameTotalTime += gameEndTime - gameStartTime;
+            console.log("Game ended at: " + new Date(gameEndTime));
+            //display the total time in the console in seconds
+            console.log("Total time: " + this.gameTotalTime / 1000 + " seconds");
+            // Optionally, you can clear the start time from session storage
+            sessionStorage.removeItem('gameStartTime');
+            sessionStorage.setItem('gameTotalTime', this.gameTotalTime);
+        } else {
+            console.log("No game started.");
+        }
+    },
+    quizStart: function() {
+        // Store the start time in session storage
+        sessionStorage.setItem('quizStartTime', new Date().getTime());
+        console.log("Quiz started at: " + new Date());
+    },
+    quizEnd: function() {
+        // Retrieve the start time from session storage
+        var quizStartTime = parseInt(sessionStorage.getItem('quizStartTime'));
+        if (!isNaN(quizStartTime)) {
+            var quizEndTime = new Date().getTime();
+            this.quizTotalTime += quizEndTime - quizStartTime;
+            console.log("Quiz ended at: " + new Date(quizEndTime));
+            //display the total time in the console in seconds
+            console.log("Total time: " + this.quizTotalTime / 1000 + " seconds");
+            // Optionally, you can clear the start time from session storage
+            sessionStorage.removeItem('quizStartTime');
+            sessionStorage.setItem('quizTotalTime', this.quizTotalTime);
+        } else {
+            console.log("No quiz started.");
+        }
     }
 };
 
-function Student(firstName, lastLetter, gradeLevel) {
+function Student(firstName, lastName, gradeLevel) {
     this.firstName = firstName;
-    this.lastLetter = lastLetter;
+    this.lastName = lastName;
     this.gradeLevel = gradeLevel;
+}
+
+function Time(totalTime, gameTotalTime, quizTotalTime) {
+    //total time spent on the website in seconds
+    this.totalTime = totalTime / 1000;
+    this.gameTotalTime = gameTotalTime / 1000;
+    this.quizTotalTime = quizTotalTime / 1000;
 }
 
 function gatherStudentInfo() {
     let userFirstName = document.getElementById("firstName").value;
-    let userLastLetter = document.getElementById("lastName").value;
+    let userLastName = document.getElementById("lastName").value;
     let userGradeLevel = document.querySelector('input[name="gradeLevel"]:checked').value;
-    let user = new Student(userFirstName, userLastLetter, userGradeLevel);
+    let user = new Student(userFirstName, userLastName, userGradeLevel);
     console.log(user);
     sessionStorage.setItem("user", JSON.stringify(user));
 }
@@ -50,13 +101,20 @@ function displayStudentInfo() {
 
 function exportData() {
     let user = JSON.parse(sessionStorage.getItem("user"));
+    let totalTime = sessionStorage.getItem('totalTime');
+    let gameTotalTime = sessionStorage.getItem('gameTotalTime');
+    let quizTotalTime = sessionStorage.getItem('quizTotalTime');
+
+    let time = new Time(totalTime, gameTotalTime, quizTotalTime);
+
     let data = {
         studentInfo: user,
-        totalTime: track.totalTime / 1000 // Convert totalTime to seconds
+        timeInfo: time,
+        quizScore: sessionStorage.getItem('quizScore') 
     };
     
     // Generate filename based on student's first name and last initial
-    let filename = user.firstName.toLowerCase() + "_" + user.lastLetter.toLowerCase() + ".json";
+    let filename = user.lastName[0].toLowerCase() + "_" + user.firstName.toLowerCase() + ".json";
 
     // Convert data to JSON format
     let jsonData = JSON.stringify(data, null, 2);
@@ -82,9 +140,25 @@ function exportData() {
 }
 
 function startTimer() {
-    track.start();
+    trackTime.start();
 }
 
 function endTimer() {
-    track.end();
+    trackTime.end();
+}
+
+function startGame(){
+    trackTime.gameStart();
+};
+
+function endGame(){
+    trackTime.gameEnd();
+}
+
+function startQuiz(){
+    trackTime.quizStart();
+};
+
+function endQuiz(){
+    trackTime.quizEnd();
 }
